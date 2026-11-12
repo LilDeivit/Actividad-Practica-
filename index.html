@@ -16,7 +16,7 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +65,42 @@
             </div>
         </section>
 
+        <!-- Seccioón de formulario (Agregado por el integrante D) -->
+
+        <section id="contacto" class="seccion">
+            <h2>Formulario de consultas</h2>
+            <p class="introduccion">Cuéntanos qué quieres conocer y nos contactaremos contigo.</p>
+            <form class="formulario" action="#" method="GET">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" autocomplete="name" placeholder="Valeria Cruz">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="misitio@email.com">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9+ ]{7,15}" title="Entre 7 y 15 dígitos; puedes usar + y espacios" autocomplete="tel" placeholder="+593 99 123 4567">
+                </div>
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+                <div class="campo campo-completo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="500" placeholder="Cuentanos tu consulta"></textarea>
+                </div>
+                <button type="submit" class="boton">Enviar consulta</button>
+            </form>
+        </section>
     </main>
+
+
+    <footer class="pie">
+    <p> Mi sitio </p>
+    <p> 2026 </p>
+    </footer>
 </body>
 
 </html>
